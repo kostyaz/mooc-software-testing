@@ -23,23 +23,17 @@ public class RomanTest {
     @Test
     void numberWithManyDigits() {
 
-        Roman rmn = new Roman();
-
         Assertions.assertEquals(8, this.rmn.convert("VIII"));
     }
 
     @Test
     void numberWithSubtractiveNotation() {
 
-        Roman rmn = new Roman();
-
         Assertions.assertEquals(4, this.rmn.convert("IV"));
     }
 
     @Test
     void numberWithAndWithoutSubtractiveNotation() {
-
-        Roman rmn = new Roman();
 
         Assertions.assertEquals(44, this.rmn.convert("XLIV"));
     }
